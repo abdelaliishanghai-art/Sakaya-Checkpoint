@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>دليل نشر SAKAYA Guard</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+body{font-family:'Cairo',sans-serif;background:#F7F4EE;color:#0B1929;margin:0;padding:0;}
+.page{max-width:760px;margin:0 auto;padding:40px 32px 80px;}
+.hero{background:linear-gradient(135deg,#0B1929,#1C3550);border-radius:18px;padding:32px;margin-bottom:32px;text-align:center;}
+.h-logo{display:inline-block;background:rgba(200,168,75,.15);border:1px solid rgba(200,168,75,.35);border-radius:12px;padding:8px 20px;margin-bottom:14px;}
+.h-en{font-size:20px;font-weight:900;color:#E8C97A;letter-spacing:2px;font-family:Georgia,serif;}
+.h-mg{font-size:8px;font-weight:700;color:rgba(200,168,75,.6);letter-spacing:4px;margin-top:2px;}
+.h-title{font-size:22px;font-weight:900;color:#fff;margin-bottom:6px;}
+.h-sub{font-size:13px;color:rgba(255,255,255,.55);line-height:1.7;}
+.step-card{background:#fff;border:1px solid #D9D0BC;border-radius:14px;padding:24px;margin-bottom:18px;}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:#0B1929;color:#E8C97A;font-weight:900;font-size:15px;border-radius:9px;margin-bottom:10px;}
+.step-title{font-size:17px;font-weight:800;color:#0B1929;margin-bottom:12px;}
+.step-list{list-style:none;padding:0;}
+.step-list li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #EDE8D8;font-size:13.5px;color:#2D4357;line-height:1.6;}
+.step-list li:last-child{border-bottom:none;}
+.step-list li::before{content:'›';color:#C8A84B;font-size:18px;font-weight:700;flex-shrink:0;margin-top:-1px;}
+.code{background:#EDE8D8;border:1px solid #D9D0BC;border-radius:6px;padding:2px 8px;font-family:monospace;font-size:12px;color:#0B1929;word-break:break-all;}
+.highlight{background:#FEF3C7;border:1px solid #F59E0B;border-radius:6px;padding:8px 12px;font-size:13px;color:#8B5C10;margin-top:8px;}
+.highlight strong{color:#0B1929;}
+.success-box{background:#D4EDDA;border:1px solid #68D391;border-radius:12px;padding:20px;margin-bottom:18px;}
+.sb-icon{font-size:32px;margin-bottom:8px;}
+.sb-title{font-size:16px;font-weight:800;color:#1A6B45;margin-bottom:6px;}
+.sb-text{font-size:13px;color:#1A6B45;line-height:1.7;}
+.warning{background:#FADADD;border:1px solid #F88;border-radius:10px;padding:12px 14px;font-size:13px;color:#8B2020;margin-top:10px;}
+.files-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;}
+.file-item{background:#EDE8D8;border-radius:10px;padding:12px 14px;display:flex;align-items:center;gap:10px;}
+.fi-icon{font-size:22px;}
+.fi-name{font-size:13px;font-weight:700;color:#0B1929;font-family:monospace;}
+.fi-desc{font-size:11px;color:#7A8FA0;margin-top:2px;}
+@media print{body{background:#fff;}.page{padding:20px;}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="hero">
+  <div class="h-logo"><div class="h-en">SAKAYA</div><div class="h-mg">MANAGEMENT</div></div>
+  <div class="h-title">دليل نشر تطبيق Guard</div>
+  <div class="h-sub">GitHub Pages PWA · مجاني · يعمل على Android و iPhone<br>اتبع الخطوات بالترتيب — مرة واحدة فقط</div>
+</div>
+
+<div class="success-box">
+  <div class="sb-icon">📦</div>
+  <div class="sb-title">الملفات التي تحتاجها (4 ملفات)</div>
+  <div class="files-grid">
+    <div class="file-item"><div class="fi-icon">📄</div><div><div class="fi-name">index.html</div><div class="fi-desc">التطبيق الرئيسي</div></div></div>
+    <div class="file-item"><div class="fi-icon">📋</div><div><div class="fi-name">manifest.json</div><div class="fi-desc">إعدادات التطبيق</div></div></div>
+    <div class="file-item"><div class="fi-icon">⚙️</div><div><div class="fi-name">sw.js</div><div class="fi-desc">العمل بدون إنترنت</div></div></div>
+    <div class="file-item"><div class="fi-icon">🖼️</div><div><div class="fi-name">icon-192.png + icon-512.png</div><div class="fi-desc">أيقونة التطبيق</div></div></div>
+  </div>
+</div>
+
+<!-- STEP 1 -->
+<div class="step-card">
+  <div class="step-num">1</div>
+  <div class="step-title">إنشاء حساب GitHub مجاني</div>
+  <ul class="step-list">
+    <li>افتح المتصفح وادخل على <span class="code">github.com</span></li>
+    <li>اضغط <strong>"Sign up"</strong> وأنشئ حساباً مجانياً باستخدام أي بريد إلكتروني</li>
+    <li>أكّد بريدك الإلكتروني من الرسالة التي تصلك</li>
+  </ul>
+</div>
+
+<!-- STEP 2 -->
+<div class="step-card">
+  <div class="step-num">2</div>
+  <div class="step-title">إنشاء مستودع جديد</div>
+  <ul class="step-list">
+    <li>بعد تسجيل الدخول، اضغط على زر <strong>"+"</strong> في الأعلى ثم <strong>"New repository"</strong></li>
+    <li>في خانة <strong>Repository name</strong> اكتب: <span class="code">sakaya-guard</span></li>
+    <li>اختر <strong>"Public"</strong> (مهم — لازم public لكي تعمل GitHub Pages)</li>
+    <li>اضغط <strong>"Create repository"</strong></li>
+  </ul>
+  <div class="highlight">⚠️ <strong>مهم:</strong> اسم المستودع يجب أن يكون <span class="code">sakaya-guard</span> بالضبط بدون مسافات</div>
+</div>
+
+<!-- STEP 3 -->
+<div class="step-card">
+  <div class="step-num">3</div>
+  <div class="step-title">رفع الملفات الأربعة</div>
+  <ul class="step-list">
+    <li>في صفحة المستودع الجديد، اضغط <strong>"uploading an existing file"</strong> أو <strong>"Add file → Upload files"</strong></li>
+    <li>اسحب وأفلت الملفات الأربعة كلها دفعة واحدة: <span class="code">index.html</span> · <span class="code">manifest.json</span> · <span class="code">sw.js</span> · <span class="code">icon-192.png</span> · <span class="code">icon-512.png</span></li>
+    <li>في الأسفل، اضغط <strong>"Commit changes"</strong> (الزر الأخضر)</li>
+  </ul>
+</div>
+
+<!-- STEP 4 -->
+<div class="step-card">
+  <div class="step-num">4</div>
+  <div class="step-title">تفعيل GitHub Pages</div>
+  <ul class="step-list">
+    <li>في صفحة المستودع، اضغط على <strong>"Settings"</strong> (في القائمة العلوية)</li>
+    <li>من القائمة الجانبية اختر <strong>"Pages"</strong></li>
+    <li>تحت <strong>"Source"</strong> اختر: <strong>Deploy from a branch</strong></li>
+    <li>تحت <strong>"Branch"</strong> اختر: <strong>main</strong> ثم <strong>/ (root)</strong></li>
+    <li>اضغط <strong>"Save"</strong></li>
+    <li>انتظر دقيقة واحدة، ثم أعد تحميل الصفحة</li>
+  </ul>
+  <div class="highlight">✅ بعد الحفظ سيظهر رابط مثل: <strong>https://اسمك.github.io/sakaya-guard</strong><br>هذا هو رابط التطبيق — احفظه وأرسله للحراس</div>
+</div>
+
+<!-- STEP 5 -->
+<div class="step-card">
+  <div class="step-num">5</div>
+  <div class="step-title">تثبيت التطبيق على هواتف الحراس</div>
+  <ul class="step-list">
+    <li>أرسل الرابط للحارس عبر واتساب</li>
+    <li>يفتح الرابط على هاتفه</li>
+    <li><strong>Android (Chrome):</strong> ستظهر رسالة "تثبيت التطبيق" تلقائياً — يضغط "تثبيت"</li>
+    <li><strong>iPhone (Safari):</strong> يضغط زر المشاركة ↑ ثم "Add to Home Screen" ثم "Add"</li>
+    <li>التطبيق يظهر على الشاشة الرئيسية باسم <strong>SAKAYA Guard</strong> مع الأيقونة</li>
+  </ul>
+</div>
+
+<!-- STEP 6 -->
+<div class="step-card">
+  <div class="step-num">6</div>
+  <div class="step-title">ربط التطبيق بـ Google Sheets</div>
+  <ul class="step-list">
+    <li>عند أول فتح للتطبيق، يظهر شاشة إعداد تطلب <strong>رابط Web App</strong></li>
+    <li>الرابط هو نفس رابط Apps Script الذي استخدمته في نظام التصاريح (elevator_access)</li>
+    <li>يُدخل الحارس الرابط مرة واحدة فقط — يُحفظ تلقائياً على الهاتف</li>
+    <li>التطبيق يحمّل قائمة التصاريح ويحتفظ بنسخة محلية للعمل بدون إنترنت</li>
+  </ul>
+  <div class="highlight">💡 <strong>تلميح:</strong> أرسل الرابط للحارس مع رابط التطبيق حتى يُدخله بسهولة</div>
+</div>
+
+<div class="warning">
+  ⚠️ <strong>ملاحظة iPhone:</strong> يجب فتح الرابط في Safari تحديداً (ليس Chrome أو غيره) لتظهر خيار "Add to Home Screen"
+</div>
+
+</div>
+</body>
+</html>
